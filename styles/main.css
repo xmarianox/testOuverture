@@ -1,6 +1,5 @@
-/*
- *	Mariano Molina
- *	main.css
+/**
+ * Created by Mariano Molina on 01/04/16.
  */
 /***********************************
 * http://meyerweb.com/eric/tools/css/reset/
@@ -43,10 +42,82 @@ table {
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  outline: none; }
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
 body {
   font: 100% Helvetica, sans-serif;
   color: #333; }
+
+main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  overflow: hidden; }
+
+h1 {
+  font-size: 24px;
+  margin: 15px auto; }
+
+#displayProducts {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto; }
+  #displayProducts p {
+    font-size: 12px;
+    text-align: justify; }
+
+.btn, .modal .close {
+  display: inline-block;
+  background: transparent;
+  border: 1px solid #000;
+  border-radius: 2px;
+  padding: 0 16px;
+  line-height: 26px;
+  width: auto;
+  height: 30px;
+  text-align: center;
+  color: #000;
+  cursor: pointer;
+  font-size: 12px;
+  margin: 5px auto; }
+  .btn:hover, .modal .close:hover {
+    border: 1px solid #4d4d4d;
+    color: #4d4d4d; }
+
+.modal {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 30;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 16px;
+  overflow: hidden;
+  color: #fff;
+  display: none; }
+  .modal .close {
+    float: right;
+    color: #fff;
+    border: 1px solid #fff;
+    text-decoration: none; }
+    .modal .close:hover {
+      border: 1px solid #b3b3b3;
+      color: #b3b3b3; }
+  .modal .productDescription {
+    width: 100%;
+    float: left;
+    margin: 20% auto; }
+    .modal .productDescription p {
+      width: 60%;
+      font-size: 14px;
+      text-align: justify;
+      margin: 0 auto; }
 
 /*# sourceMappingURL=main.css.map */
